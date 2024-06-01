@@ -1,0 +1,100 @@
+*{
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+}
+
+.App{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  background: #574e5f;
+}
+
+.App-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.App-header h3 {
+  color: #fff;
+}
+
+.App-footer{
+  text-align: center;
+  background: #574e5f;
+  color: #fff;
+  padding: 15px;
+}
+.content{
+  flex: 1;
+}
+.note-box {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.inner-content {
+  display: grid;
+  width: 30%;
+  margin: 30px auto;
+  box-shadow: 0px 0px 10px 0px #8080804f;
+  border-radius: 20px;
+}
+.inner-content-box{
+  display: grid;
+  margin: 30px;
+  box-shadow: 0px 0px 10px 0px #8080804f;
+  border-radius: 20px;
+}
+.inner-content input,.inner-content textarea,.inner-content-box input,.inner-content-box textarea{
+  border: unset;
+  padding: 10px;
+  border-radius: 20px;
+}
+.cont_btn button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  background: #bdbac0;
+  cursor: pointer;
+}
+.cont_btn {
+  text-align: right;
+  margin-right: 30px;
+  width: 62%;
+  margin-top: -48px;
+}
+:focus-visible {
+  outline: unset;
+}
+.cont_btn button:hover{
+  background: #000;
+  color: #fff;
+}
+.cont_btn.box_btn {
+  text-align: left;
+}
+.cont_btn.box_btn button{
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  cursor: pointer;
+}
+.cont_btn.box_btn button:hover{
+  color: #000;
+  background: #bdbac0;
+}
+.note-box {
+  flex: 2;
+}
